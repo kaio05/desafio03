@@ -1,0 +1,50 @@
+import Joi from 'joi';
+import { z } from 'zod';
+export declare const CarSchemaZod: z.ZodObject<{
+    id: z.ZodString;
+    licensePlate: z.ZodString;
+    brand: z.ZodString;
+    model: z.ZodString;
+    mileage: z.ZodUnion<[z.ZodNumber, z.ZodNull]>;
+    year: z.ZodNumber;
+    items: z.ZodArray<z.ZodString, "many">;
+    price: z.ZodNumber;
+    registrationDate: z.ZodString;
+    status: z.ZodEnum<["ativo", "inativo", "excluído"]>;
+}, "strip", z.ZodTypeAny, {
+    id?: string;
+    model?: string;
+    brand?: string;
+    licensePlate?: string;
+    mileage?: number;
+    year?: number;
+    items?: string[];
+    price?: number;
+    registrationDate?: string;
+    status?: "ativo" | "inativo" | "excluído";
+}, {
+    id?: string;
+    model?: string;
+    brand?: string;
+    licensePlate?: string;
+    mileage?: number;
+    year?: number;
+    items?: string[];
+    price?: number;
+    registrationDate?: string;
+    status?: "ativo" | "inativo" | "excluído";
+}>;
+export declare const CarSchemaJoi: Joi.ObjectSchema<any>;
+export declare const CustomerSchemaJoi: Joi.ObjectSchema<any>;
+export type carModelInput = {
+    id: string;
+    model: string;
+    brand: string;
+    licensePlate: string;
+    mileage?: number;
+    year: number;
+    items: string[];
+    price: number;
+    status: 'ativo' | 'inativo' | 'excluído';
+    registrationDate: Date;
+};

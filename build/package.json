@@ -1,0 +1,56 @@
+{
+  "name": "aws_node_set24_desafio_02_incrivel_mundo_de_typescript",
+  "version": "1.0.0",
+  "description": "API para um sistema de compra de carros.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint",
+    "start": "node ./common/infraestructure/http/server.js",
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthur-Peixoto/AWS_NODE_SET24_DESAFIO_02_INCRIVEL_MUNDO_DE_TYPESCRIPT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arthur-Peixoto/AWS_NODE_SET24_DESAFIO_02_INCRIVEL_MUNDO_DE_TYPESCRIPT/issues"
+  },
+  "homepage": "https://github.com/Arthur-Peixoto/AWS_NODE_SET24_DESAFIO_02_INCRIVEL_MUNDO_DE_TYPESCRIPT#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "celebrate": "^15.0.3",
+    "dotenv-cli": "^7.4.2",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/joi": "^17.2.2",
+    "@types/node": "^22.8.2",
+    "eslint": "^9.13.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "jest": "^29.7.0",
+    "prettier": "3.3.3",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.1",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.12.1",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
